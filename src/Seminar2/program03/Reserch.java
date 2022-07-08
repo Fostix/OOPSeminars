@@ -1,0 +1,32 @@
+package Seminar2.program03;
+
+import java.util.ArrayList;
+
+class Reserch {
+    ArrayList<Node> tree;
+
+    public Reserch(GeoTree geoTree) {
+        tree = geoTree.getTree();
+    }
+
+    public ArrayList<Person> spend(Person p, Relationship re) {
+
+        var result = new ArrayList<Person>();
+
+        // tree.forEach((t) -> {
+        // if (t.p1.fullName == p.fullName
+        // && t.re == re) {
+        // result.add(t.p2);
+        // }
+        // });
+
+        for (Node t : tree) {
+            if (t.p1.fullName == p.fullName
+                    && t.re == re) {
+                result.add(t.p2);
+            }
+        }
+
+        return result;
+    }
+}
