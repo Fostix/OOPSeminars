@@ -31,12 +31,17 @@ public class Person {
         this.child = null;
     }
 
-    public Person(String мола, String пола, String dateOfBorn, boolean gender, Person l) {
+    public Person(String name, String surname, String dateOfBorn, boolean gender, Person l) {
+        this.name = name;
+        this.surname = surname;
+        this.dateOfBorn = dateOfBorn;
+        this.gender = gender;
     }
 
 
     @Override
     public String toString() {
+        //if(ChildList)
         return String.format("name: %s\nsurname: %s\ndate of born: %s\ngender: %b\n", this.name, this.surname, this.dateOfBorn, this.gender);
     }
 }
