@@ -1,10 +1,10 @@
 package MyExamples.Program002;
 
 public abstract class Animal {
-    protected final byte ears; // Уши.
-    protected final byte eye;
-    protected final String colorEye;
-    protected final String color;
+    private byte ears; // Уши.
+    private byte eye;
+    private String colorEye;
+    private String color;
 
 
     protected Animal(byte ears, byte eye, String colorEye, String color) {
@@ -21,4 +21,8 @@ public abstract class Animal {
         this.color = "White";
     }
 
+    @Override
+    public String toString() {
+        return String.format("ears: %d\neye: %d color eye: %s\ncolorL: %s", this.ears, this.eye, this.colorEye, this.color);
+    }
 }
