@@ -13,6 +13,8 @@ public abstract class Animal {
         this.weight = weight;
     }
 
-
-
+    @Override
+    public String toString() {
+        return String.format("%s, %s", this.name, this.weight);
+    }
 }
