@@ -8,7 +8,7 @@ public class Person {
     }
 
     public void comeCat(Cat cat) {
-        System.out.println("Котейка сюды");
+        System.out.println("Кис-кис");
         cat.goOwner();
     }
 
