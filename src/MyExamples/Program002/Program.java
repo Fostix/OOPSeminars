@@ -6,7 +6,6 @@ public class Program {
         // не успел нормально продумать хоть и залез немного ко второму семинару задачи.
         Animal c = new Cat((byte) 2, (byte) 2, "green", "gray", (byte) 4, (byte) 2, "Бармалей");
         System.out.println(c);
-
-
+        // Слишком много полей описал!!
     }
 }
