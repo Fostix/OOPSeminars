@@ -1,8 +1,13 @@
 package MyExamples.Program06PersonAndPets;
 
+
+import MyExamples.Program06PersonAndPets.Eat.Sausage;
+import MyExamples.Program06PersonAndPets.Pets.Pet;
+
 public class Person extends Animal{
 
     private String lastName;
+    private int sausageOnHand;
 
 
     public Person(String name, String lastName, float weight) {
@@ -11,25 +16,34 @@ public class Person extends Animal{
     }
 
 
-    public void call(Cat cat) {
+    public void call(Pet pet) {
         PrintConsole console = new PrintConsole();
-        console.printConsole("Кис-кис-кис");
-        cat.comeUp();
+        console.printConsole("Позвать питомца");
+        pet.comeUp(sausageOnHand);
+        if (sausageOnHand > 0) {
+            sausageOnHand--;
+        }
+
 
     }
 
+    public void takeSausage(Sausage sausage) {
+        if (sausage.infoGram() > 0) {
+            this.sausageOnHand++;
+        }
+    }
 
 
     @Override
     public String getInfo() {
-        return String.format("Фамилия %s\nИмя %s\nВес %.1f",
-                this.lastName, this.getName(), this.getWeight());
+        return String.format("Фамилия %s\nИмя %s\nВес %.1f\nв руке %d колбаса(ы)",
+                this.lastName, this.getName(), this.getWeight(), this.sausageOnHand);
     }
 
 
     @Override
     public String toString() {
-        return String.format("Фамилия %s\n%s",
-                this.lastName, super.toString());
+        return String.format("Фамилия %s\n%s\nв руке %d колбаса(ы)",
+                this.lastName, super.toString(), this.sausageOnHand);
     }
 }
