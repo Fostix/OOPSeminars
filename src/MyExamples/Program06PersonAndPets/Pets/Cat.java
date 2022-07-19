@@ -14,7 +14,6 @@ public class Cat extends Animal implements Pet {
 
 
 
-    @Override
     public void comeUp(int sausage) { // подойти к хозяину
         PrintConsole console = new PrintConsole();
 
@@ -27,8 +26,6 @@ public class Cat extends Animal implements Pet {
             console.printConsole("Мяу\nбежит кот мяу и съедает колбасу");
         }
     }
-
-
 
 
 }

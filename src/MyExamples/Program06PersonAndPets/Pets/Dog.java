@@ -10,7 +10,7 @@ public class Dog extends Animal implements Pet {
         super(name, weight);
     }
 
-    @Override
+
     public void comeUp(int sausage) { // Скопировал метод немного изменив текс. Хотел отдельно создать метод
         // что-бы передавать только измененный текст под каждый вид животного, не вышло.
         PrintConsole console = new PrintConsole();
