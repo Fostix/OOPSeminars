@@ -1,7 +1,7 @@
-package MyExamples.Program06PersonAndPets.Pets;
+package MyExamples.Program006PersonAndPets.Pets;
 
-import MyExamples.Program06PersonAndPets.Animal;
-import MyExamples.Program06PersonAndPets.PrintConsole;
+import MyExamples.Program006PersonAndPets.Animal;
+import MyExamples.Program006PersonAndPets.PrintConsole;
 
 import java.util.Random;
 
@@ -10,7 +10,7 @@ public class Dog extends Animal implements Pet {
         super(name, weight);
     }
 
-    @Override
+
     public void comeUp(int sausage) { // Скопировал метод немного изменив текс. Хотел отдельно создать метод
         // что-бы передавать только измененный текст под каждый вид животного, не вышло.
         PrintConsole console = new PrintConsole();

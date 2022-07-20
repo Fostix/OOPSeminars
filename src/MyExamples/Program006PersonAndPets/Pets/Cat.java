@@ -1,7 +1,7 @@
-package MyExamples.Program06PersonAndPets.Pets;
+package MyExamples.Program006PersonAndPets.Pets;
 
-import MyExamples.Program06PersonAndPets.Animal;
-import MyExamples.Program06PersonAndPets.PrintConsole;
+import MyExamples.Program006PersonAndPets.Animal;
+import MyExamples.Program006PersonAndPets.PrintConsole;
 
 import java.util.Random;
 
@@ -11,10 +11,6 @@ public class Cat extends Animal implements Pet {
     }
 
 
-
-
-
-    @Override
     public void comeUp(int sausage) { // подойти к хозяину
         PrintConsole console = new PrintConsole();
 
@@ -27,8 +23,4 @@ public class Cat extends Animal implements Pet {
             console.printConsole("Мяу\nбежит кот мяу и съедает колбасу");
         }
     }
-
-
-
-
 }

@@ -1,8 +1,8 @@
-package MyExamples.Program06PersonAndPets.Eat;
+package MyExamples.Program006PersonAndPets.Eat;
 
 public class Sausage {
-    String mark;
-    int gram;
+    private String mark;
+    private int gram;
 
     public Sausage(String mark, int gram) {
         this.mark = mark;
@@ -16,8 +16,6 @@ public class Sausage {
     public String getInfo() {
         return String.format("Марка %s\nГрамм %d", this.mark, this.gram);
     }
-
-
 
 
 }

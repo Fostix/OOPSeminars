@@ -10,9 +10,9 @@ class Person {
         count = 0;
     }
 
-
-
-    /** Hi*/
+    /**
+     * Hi
+     */
     public Person(int id, String name, String surname) {
         count++;
         this.id = id;
@@ -27,14 +27,9 @@ class Person {
         this.surname = "don't written";
     }
 
-
     public int printId() {
         return count;
     }
-
-
-    //public void Write()
-
 
     @Override
     public String toString() {

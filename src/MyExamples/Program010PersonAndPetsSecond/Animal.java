@@ -1,26 +1,30 @@
-package MyExamples.Program06PersonAndPets;
+package MyExamples.Program010PersonAndPetsSecond;
 
-public abstract class Animal{
+public abstract class Animal {
     private String name;
     private float weight;
 
     public Animal(String name, float weight) {
-        this.name = name;
+        rename(name);
         this.weight = weight;
     }
 
-    //public abstract void call();
-
+    public String getName() {
+        return name;
+    }
 
     public float getWeight() {
         return weight;
     }
 
-    protected String getName() {
-        return name;
+    public String rename(String name) {
+        return this.name = name;
     }
 
-    //@Override
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
     public String getInfo() {
         return String.format("Кличка %s\nВес %.1f", this.name, this.weight);
     }
