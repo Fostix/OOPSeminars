@@ -1,7 +1,7 @@
-package MyExamples.Program06PersonAndPets.Pets;
+package MyExamples.Program006PersonAndPets.Pets;
 
-import MyExamples.Program06PersonAndPets.Animal;
-import MyExamples.Program06PersonAndPets.PrintConsole;
+import MyExamples.Program006PersonAndPets.Animal;
+import MyExamples.Program006PersonAndPets.PrintConsole;
 
 import java.util.Random;
 

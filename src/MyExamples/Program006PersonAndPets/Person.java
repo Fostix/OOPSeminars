@@ -1,8 +1,8 @@
-package MyExamples.Program06PersonAndPets;
+package MyExamples.Program006PersonAndPets;
 
 
-import MyExamples.Program06PersonAndPets.Eat.Sausage;
-import MyExamples.Program06PersonAndPets.Pets.Pet;
+import MyExamples.Program006PersonAndPets.Eat.Sausage;
+import MyExamples.Program006PersonAndPets.Pets.Pet;
 
 public class Person extends Animal{
 

@@ -1,4 +1,4 @@
-package MyExamples.Program06PersonAndPets;
+package MyExamples.Program006PersonAndPets;
 
 public class PrintConsole {
 

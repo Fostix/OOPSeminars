@@ -17,7 +17,7 @@ public class Pro {
         gt.append(vasya, jane);
         gt.append(vasya, ivan);
 
-        System.out.println(new Reserch(gt).spend(masha, Relationship.parent));
+        System.out.println(new Reserch(gt).spend(vasya, Relationship.parent));
 
     }
 
