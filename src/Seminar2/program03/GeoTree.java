@@ -2,7 +2,7 @@ package Seminar2.program03;
 
 import java.util.ArrayList;
 
-class GeoTree {
+public class GeoTree {
     private ArrayList<Node> tree = new ArrayList<>();
 
     public ArrayList<Node> getTree() {

@@ -4,7 +4,6 @@ import MyExamples.Program011GeoTreeTry.Generators.DateGenerator;
 import MyExamples.Program011GeoTreeTry.Generators.RandomWordNot;
 
 import java.util.Random;
-import java.util.UUID;
 
 public class Person {
     private String name;
@@ -58,7 +57,7 @@ public class Person {
         this.sex = new Random().nextBoolean();
     }
 
-    /** Создать человека конструктор по умолчанию, что бы не придумывать имена*/
+    /** Создать человека. Конструктор по умолчанию, что бы не придумывать имена*/
     public Person() {
         setName(new RandomWordNot().randomName());
         setSurname(new RandomWordNot().randomName());
@@ -105,6 +104,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return String.format("%s\n%s\n%s\n%s", this.name, this.surname, this.yearOfBirth, getSex());
+        return String.format("\nИмя: %s Фамилия: %s Год рождения: %s Пол: %s", this.name, this.surname, this.yearOfBirth, getSex());
     }
 }

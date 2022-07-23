@@ -1,6 +1,6 @@
 package Seminar2.program03;
 
-class Node {
+public class Node {
     Person p1;
     Relationship re;
     Person p2;
