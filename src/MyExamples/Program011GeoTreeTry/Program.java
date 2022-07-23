@@ -6,6 +6,8 @@ import java.util.*;
 
 public class Program {
     public static void main(String[] args) {
+        // Проблем много бабушка может оказаться мужчиной :D, возраста не совпадать.
+        // Поиска нет просто вывод всех данных.
         Person p0 = new Person();
         GeoTree family = new GeoTree(p0);
         family.append(new Relatives("Дети", 1));
