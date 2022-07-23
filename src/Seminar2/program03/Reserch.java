@@ -2,7 +2,7 @@ package Seminar2.program03;
 
 import java.util.ArrayList;
 
-class Reserch {
+public class Reserch {
     ArrayList<Node> tree;
 
     public Reserch(GeoTree geoTree) {
@@ -11,7 +11,7 @@ class Reserch {
 
     public ArrayList<Person> spend(Person p, Relationship re) {
 
-        var result = new ArrayList<Person>();
+        ArrayList result = new ArrayList<Person>();
 
         // tree.forEach((t) -> {
         // if (t.p1.fullName == p.fullName
@@ -26,7 +26,7 @@ class Reserch {
                 result.add(t.p2);
             }
         }
-
+        System.out.println(result);
         return result;
     }
 }
