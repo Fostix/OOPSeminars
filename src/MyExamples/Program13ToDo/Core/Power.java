@@ -1,8 +1,12 @@
-package MyExamples.ProgramToDo;
+package MyExamples.Program13ToDo.Core;
 
 public class Power {
     private ButtonOnOff state;
-    protected void power() {
+
+    public Power() {
+        this.state = ButtonOnOff.OFF;
+    }
+    public void power() {
         if (this.state == ButtonOnOff.ON) {
             this.state = ButtonOnOff.OFF;
         } else {
