@@ -6,13 +6,11 @@ public class Users {
     private String surname;
     private String patronymic;
 
-    private Users(String name, String surname, String patronymic) {
+    public Users(String name, String surname, String patronymic) {
         this.id = new Id();
         this.name = name;
         this.surname = surname;
         this.patronymic = patronymic;
-    }
-    public Users(){
     }
 
     public Users addUser(String name, String surname, String patronymic) {
@@ -23,15 +21,15 @@ public class Users {
     @Override
     public boolean equals(Object obj) {
         Users user = (Users) obj;
-        return this.id ==user.id;
+        return this.id == user.id;
     }
 
     public int getId() {
-        return id.getId();
+        return this.id.getId();
     }
 
     @Override
     public String toString() {
-        return String.format("%d %s %s %s", id.getId(), this.name, this.surname, this.patronymic);
+        return String.format("%d %s %s %s", this.id.getId(), this.name, this.surname, this.patronymic);
     }
 }

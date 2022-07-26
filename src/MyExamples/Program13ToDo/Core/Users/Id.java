@@ -12,7 +12,7 @@ public class Id {
     }
 
     public int getId() {
-        return number;
+        return this.number;
     }
 
     @Override

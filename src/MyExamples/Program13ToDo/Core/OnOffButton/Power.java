@@ -1,4 +1,4 @@
-package MyExamples.Program13ToDo.Core;
+package MyExamples.Program13ToDo.Core.OnOffButton;
 
 public class Power {
     private ButtonOnOff state;
