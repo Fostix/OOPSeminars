@@ -1,0 +1,294 @@
+@startuml
+
+/' diagram meta data start
+config=CallConfiguration;
+{
+  "rootMethod": "MyExamples.Program13ToDo.Client.Program#main(String[])",
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showMethodParametersTypes": false,
+    "showMethodParametersNames": false,
+    "showMethodReturnType": false,
+    "showPackageLevels": 2,
+    "showCallOrder": false,
+    "edgeMode": "MethodsOnly", // TypesOnly, MethodsOnly, TypesAndMethods, MethodsAndDirectTypeUsage
+    "showDetailedClassStructure": false
+  },
+  "rootClass": "MyExamples.Program13ToDo.Client.Program",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="LR"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_237656332 { 
+   	label=Program13ToDo
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1349245171 { 
+   	label=Client
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   subgraph cluster_2054100580 { 
+   	label=Program
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Program303847130XXXmain1859653459[
+	label="+ main()"
+	style=filled
+	fillcolor=white
+	tooltip="Program
+
+null"
+	penwidth=4
+	fontcolor=darkgreen
+];
+} 
+} 
+
+subgraph cluster_847760225 { 
+   	label=Core
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   subgraph cluster_1294375698 { 
+   	label=Model
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Model1316051053XXXaddNewUser0[
+	label="+ addNewUser()"
+	style=filled
+	fillcolor=white
+	tooltip="Model
+
+null"
+	fontcolor=darkgreen
+];
+
+Model1316051053XXXappendUser82025960[
+	label="+ appendUser()"
+	style=filled
+	fillcolor=white
+	tooltip="Model
+
+null"
+	fontcolor=darkgreen
+];
+
+Model1316051053XXXcheckFileToDo0[
+	label="+ checkFileToDo()"
+	style=filled
+	fillcolor=white
+	tooltip="Model
+
+null"
+	fontcolor=darkgreen
+];
+
+Model1316051053XXXcreateFile0[
+	label="+ createFile()"
+	style=filled
+	fillcolor=white
+	tooltip="Model
+
+null"
+	fontcolor=darkgreen
+];
+
+Model1316051053XXXpressTheButtonPower0[
+	label="+ pressTheButtonPower()"
+	style=filled
+	fillcolor=white
+	tooltip="Model
+
+null"
+	fontcolor=darkgreen
+];
+
+Model1316051053XXXreadFile0[
+	label="+ readFile()"
+	style=filled
+	fillcolor=white
+	tooltip="Model
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1611968014 { 
+   	label=JSON
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   JSON778720520XXXjsonRead2189724[
+	label="+ jsonRead()"
+	style=filled
+	fillcolor=white
+	tooltip="JSON
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1770849937 { 
+   	label=CreateFileStorage
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   CreateFileStorage1456668602XXXcreateFileStorage0[
+	label="+ createFileStorage()"
+	style=filled
+	fillcolor=white
+	tooltip="CreateFileStorage
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1957656469 { 
+   	label=ReadFileStorage
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   ReadFileStorage1456668602XXXcheck0[
+	label="+ check()"
+	style=filled
+	fillcolor=white
+	tooltip="ReadFileStorage
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_27397003 { 
+   	label=MrReadIsReadingStorages
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   MrReadIsReadingStorages1456668602XXXjsonRead0[
+	label="+ jsonRead()"
+	style=filled
+	fillcolor=white
+	tooltip="MrReadIsReadingStorages
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_291162373 { 
+   	label=Power
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Power1986364942XXXpower0[
+	label="+ power()"
+	style=filled
+	fillcolor=white
+	tooltip="Power
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+} 
+
+'edges    
+Model1316051053XXXcheckFileToDo0 -> Model1316051053XXXcreateFile0;
+Model1316051053XXXcheckFileToDo0 -> Model1316051053XXXreadFile0;
+Model1316051053XXXcheckFileToDo0 -> ReadFileStorage1456668602XXXcheck0;
+Model1316051053XXXcreateFile0 -> CreateFileStorage1456668602XXXcreateFileStorage0;
+Model1316051053XXXpressTheButtonPower0 -> Power1986364942XXXpower0;
+Model1316051053XXXreadFile0 -> MrReadIsReadingStorages1456668602XXXjsonRead0;
+MrReadIsReadingStorages1456668602XXXjsonRead0 -> JSON778720520XXXjsonRead2189724;
+Program303847130XXXmain1859653459 -> Model1316051053XXXaddNewUser0;
+Program303847130XXXmain1859653459 -> Model1316051053XXXappendUser82025960;
+Program303847130XXXmain1859653459 -> Model1316051053XXXcheckFileToDo0;
+Program303847130XXXmain1859653459 -> Model1316051053XXXcreateFile0;
+Program303847130XXXmain1859653459 -> Model1316051053XXXpressTheButtonPower0;
+Program303847130XXXmain1859653459 -> Model1316051053XXXreadFile0;
+    
+}
+@enduml
