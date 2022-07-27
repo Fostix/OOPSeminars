@@ -1,13 +1,11 @@
 package MyExamples.Program13ToDo.Core.MVP;
 
 import MyExamples.Program13ToDo.Core.CreateFileStorage;
-import MyExamples.Program13ToDo.Core.Formats.Interfaces.FileWay;
 import MyExamples.Program13ToDo.Core.MrReadIsReadingStorages;
 import MyExamples.Program13ToDo.Core.OnOffButton.Power;
 import MyExamples.Program13ToDo.Core.ReadFileStorage;
 import MyExamples.Program13ToDo.Core.Users.SaveUsers;
 import MyExamples.Program13ToDo.Core.Users.Users;
-import netscape.javascript.JSObject;
 
 import java.util.Scanner;
 
@@ -38,7 +36,6 @@ public class Model {
 
 
     public void appendUser(Users user) {
-
         SaveUsers saveUsers = new SaveUsers(user);
     }
 

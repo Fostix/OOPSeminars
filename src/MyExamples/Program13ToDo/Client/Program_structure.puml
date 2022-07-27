@@ -1,0 +1,224 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "MyExamples.Program13ToDo.Client.Program",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_237656332 { 
+   	label=Program13ToDo
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1349245171 { 
+   	label=Client
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   Program303847130[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Program</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_847760225 { 
+   	label=Core
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   CreateFileStorage1456668602[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)CreateFileStorage</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   json: JSON [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ createFileStorage(): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+JSON778720520[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)JSON</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ checkFile(fileWay: FileWay): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ createFile(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ jsonRead(way: File): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Model1316051053[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Model</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   createFileStorage: CreateFileStorage [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   power: Power [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   readFileStorage: ReadFileStorage [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addNewUser(): Users</TD></TR>
+<TR><TD ALIGN="LEFT" >+ appendUser(user: Users)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ checkFileToDo(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ createFile(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pressTheButtonPower(): Power</TD></TR>
+<TR><TD ALIGN="LEFT" >+ readFile()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+MrReadIsReadingStorages1456668602[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MrReadIsReadingStorages</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ jsonRead(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Power1986364942[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Power</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   state: ButtonOnOff [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ power()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ReadFileStorage1456668602[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ReadFileStorage</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   json: JSON [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ check(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" ># readFile(): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+CreateFileStorage1456668602 -> JSON778720520[label="json
+[0..1]"];
+Model1316051053 -> CreateFileStorage1456668602[label="createFileStorage
+[0..1]"];
+Model1316051053 -> MrReadIsReadingStorages1456668602[label="readFile() -> jsonRead()"];
+Model1316051053 -> Power1986364942[label="power
+[0..1]"];
+Model1316051053 -> ReadFileStorage1456668602[label="readFileStorage
+[0..1]"];
+MrReadIsReadingStorages1456668602 -> JSON778720520[label="jsonRead() -> jsonRead()"];
+ReadFileStorage1456668602 -> JSON778720520[label="json
+[0..1]"];
+    
+}
+@enduml

@@ -22,8 +22,9 @@ public class JSON implements CheckFile, CreateFile {
     public String jsonRead(File way) { // file что это fileway!!
         try {
             BufferedReader mrBufferedReader = new BufferedReader(new FileReader((way)));
-            String mrString;
+            String mrString; /////// ?????
             while ((mrString = mrBufferedReader.readLine()) != null) {
+                System.out.println(mrString);
                 return mrString;
             }
             mrBufferedReader.close();
