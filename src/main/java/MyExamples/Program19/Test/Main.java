@@ -5,13 +5,12 @@ import com.sun.jdi.IntegerType;
 import java.util.ArrayList;
 import java.util.List;
 
-class Node<T extends Integer>{
+class Node<T extends Integer> {
     T key;
     Node left, right;
     //List<Node> listTree;
 
-    public Node(T item)
-    {
+    public Node(T item) {
         key = item;
         left = right = null; // Непонятно
         //listTree = new ArrayList<>();
@@ -28,12 +27,13 @@ class BinaryTree {
     // Root of Binary Tree
     Node root;
 
-    BinaryTree() { root = null; }
+    BinaryTree() {
+        root = null;
+    }
 
     /* Given a binary tree, print its nodes according to the
     "bottom-up" postorder traversal. */
-    void printPostorder(Node node)
-    {
+    void printPostorder(Node node) {
         if (node == null)
             return;
 
@@ -48,8 +48,7 @@ class BinaryTree {
     }
 
     /* Given a binary tree, print its nodes in inorder*/
-    void printInorder(Node node)
-    {
+    void printInorder(Node node) {
         if (node == null)
             return;
 
@@ -64,8 +63,7 @@ class BinaryTree {
     }
 
     /* Given a binary tree, print its nodes in preorder*/
-    void printPreorder(Node node)
-    {
+    void printPreorder(Node node) {
         if (node == null)
             return;
 
@@ -78,11 +76,13 @@ class BinaryTree {
         /* now recur on right subtree */
         printPreorder(node.right);
     }
-    void printInorder() { printInorder(root); }
+
+    void printInorder() {
+        printInorder(root);
+    }
 
     // Driver method
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // 4 2 8 5 1 6 3 7
         BinaryTree tree = new BinaryTree();
         tree.root = new Node(1);
@@ -101,5 +101,13 @@ class BinaryTree {
         System.out.println(
                 "\nInorder traversal of binary tree is "); // Неупорядоченный обход бинарного дерева
         tree.printInorder();
+
+        System.out.println(
+                "\nInorder traversal of binary tree is ");
+        tree.printInorder();
+
+//        System.out.println(
+//                "\nPostorder traversal of binary tree is ");
+//        tree.printPostorder();
     }
 }
