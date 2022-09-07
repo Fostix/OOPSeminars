@@ -5,11 +5,6 @@ public abstract class Clothing {
     private String cloth;
     private String color;
 
-    protected Clothing(String cloth, String color) {
-        this.cloth = cloth;
-        this.color = color;
-    }
-
     protected Clothing() {
         this.cloth = "wool";
         this.color = "white";

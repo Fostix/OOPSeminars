@@ -16,9 +16,8 @@ public class Shorts extends Clothing{
 
     @Override
     public String toString() {
-        //toString();
         String a = toString();
-        System.out.println(a); // test!!
+        System.out.println(a);
         return String.format("pockets: %d, size: %d", this.pockets, this.size);
     }
 
@@ -29,7 +28,6 @@ public class Shorts extends Clothing{
 
     @Override
     public int hashCode() {
-        // make better!!
         return size;
     }
 }
