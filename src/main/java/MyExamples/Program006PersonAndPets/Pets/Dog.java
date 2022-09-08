@@ -10,9 +10,7 @@ public class Dog extends Animal implements Pet {
         super(name, weight);
     }
 
-
-    public void comeUp(int sausage) { // Скопировал метод немного изменив текс. Хотел отдельно создать метод
-        // что-бы передавать только измененный текст под каждый вид животного, не вышло.
+    public void comeUp(int sausage) {
         PrintConsole console = new PrintConsole();
 
         if (sausage < 1) {

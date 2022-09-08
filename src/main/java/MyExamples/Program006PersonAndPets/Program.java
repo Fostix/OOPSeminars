@@ -42,6 +42,5 @@ public class Program {
         myPets.add(new Dog("Кубрик", (float) 9.9)); // новый питомец собака.
         mrsConsole.printConsole(myPets.get(0).getInfo());
         ((Person) p0).call(myPets.get(0));
-
     }
 }

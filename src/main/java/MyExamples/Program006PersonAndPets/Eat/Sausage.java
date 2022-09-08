@@ -16,6 +16,4 @@ public class Sausage {
     public String getInfo() {
         return String.format("Марка %s\nГрамм %d", this.mark, this.gram);
     }
-
-
 }

@@ -10,7 +10,6 @@ public class Cat extends Animal implements Pet {
         super(name, weight);
     }
 
-
     public void comeUp(int sausage) { // подойти к хозяину
         PrintConsole console = new PrintConsole();
 
