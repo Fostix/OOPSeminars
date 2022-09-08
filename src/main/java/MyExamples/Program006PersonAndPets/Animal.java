@@ -9,9 +9,6 @@ public abstract class Animal{
         this.weight = weight;
     }
 
-    //public abstract void call();
-
-
     public float getWeight() {
         return weight;
     }
