@@ -14,8 +14,7 @@ public class Person extends Animal {
     }
 
     public void call(Pet pet) {
-        PrintConsole console = new PrintConsole();
-        console.printConsole("Позвать питомца");
+        System.out.println("Позвать питомца");
         pet.comeUp(sausageOnHand);
         if (sausageOnHand > 0) {
             sausageOnHand--;
