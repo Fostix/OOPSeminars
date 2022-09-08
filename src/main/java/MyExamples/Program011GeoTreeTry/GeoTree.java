@@ -18,6 +18,7 @@ public class GeoTree {
     @Override
     public String toString() {
         return String.format("чьё семейное древо:%s%s", this.whose, this.geoTree)
-                        .replace(",", "").replace("[","").replace("]","");
+                        .replace(",", "").replace("[","")
+                .replace("]","");
     }
 }
